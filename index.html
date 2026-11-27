@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title> GPAte </title>
+    </head>
+
+    <body>
+
+        <div class="body-container">
+
+            <div class="title-content">
+                <div class="title-text-content">
+                    <span> [Gp] </span>
+                    <span> [ate] </span>
+                </div>
+            </div>
+
+            <div class="body-content">
+                <div class="body-header">
+                    <p> Choose a template:</p>
+                </div>
+                
+                <div class="body-box">
+                    <div class="body-choice" id="template_cs_4" onclick="chooseOpt(this.id)">
+                        <span> Computer Science (4th semester) </span>
+                    </div>
+                    <div class="body-choice" id="template_chemistry_4" onclick="chooseOpt(this.id)">
+                        <span> Chemistry (4th semester) </span>
+                    </div>
+                </div>
+
+                <div class="next-button-div" onclick="nextDisplayMode()">
+                    <button type="button" class="next-button">
+                        Next
+                    </button>
+                    <img src="arrow_right.png" height="24px">
+                </div>
+            </div>
+
+            <div class="grades-table-text">
+                <span> [grades] </span>
+                <span> [table] </span>
+            </div>
+
+            <table class="grades-table">
+                <tbody class="grades-table-body">
+                </tbody>
+            </table>
+
+            <div class="gpa-result"></div>
+            
+            <div class="random-button-div">
+                <button type="button" class="random-button" onclick="randomGenerator()">
+                    Random grades generator
+                </button>
+                <div class="gears-icon-div" onclick="randomGeneratorInterface()">
+                    <img src="edit.svg" height="24px">
+                </div>
+            </div>
+
+            
+            <div class="generator-interface">
+                <table class="generator-interface-table">
+                    <tbody class="table-body">
+                        <tr id ="gpa-row">
+                            <td> GPA: </td>
+                            <td> 
+                                <button onclick="gpaToggle(this)"> Random </button>
+                            </td>
+                        </tr>
+
+                        <tr id ="min-grade-row">
+                            <td>Min grade:</td>
+                            <td>
+                                <input value="0" id="min-grade-input">
+                            </td>
+                        </tr>
+
+                        <tr id="max-grade-row">
+                            <td>Max grade:</td>
+                            <td>
+                                <input value="100" id="max-grade-input">
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            <div class="btn-grp">
+                <div class="generate-button-div" onclick="randomGenerator()">
+                    <button type="button" class="generate-button">
+                        GENERATE
+                    </button>
+                </div>
+
+                <div class="back-button-div" onclick="randomGeneratorBack()">
+                    <img src="arrow_left.png" height="24px">
+
+                    <button type="button" class="back-button">
+                        back
+                    </button>
+                </div>
+
+            </div>
+            </div>
+        </div>
+
+
+        <div class="course-creator-interface"></div>
+
+
+        </div>
+
+
+
+        <script type="text/javascript" src="script.js"></script>
+
+    </body>
+
+</html>
