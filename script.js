@@ -185,11 +185,7 @@ function check_gpa(){
 
 function hideGPA(){
     if (gpaFlag){
-        gpa_result.style.animation="ease-out-right 1s ease";
-        gpa_result.addEventListener("animationend", byeBye = () => {
-            gpa_result.style.display="none";
-            gpa_result.removeEventListener("animationend", byeBye);
-        } )
+        gpa_result.style.display="none";
         gpaFlag=false;
     }
 }
